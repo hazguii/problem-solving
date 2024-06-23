@@ -1,0 +1,7 @@
+- Translation:
+    all i did was comparing the reversed value of "s" with the value of "t" to check whether they match.
+- Rook:
+    i made combinations of the alphabet of the input square with numbers going from 1 to 8 excluding the number of the input square + all the combinations of the number of the input square with all alphabets going from "a" to "h" excluding the alphabet of the current square.
+- YetnotherrokenKeoard:
+    i tried to iterate the string starting from the end and going to the beginning of the string, each time i find a "b" i increment the variable that stores the number of b's found till that moment and same goes for "B", in case the character read was neither "b" and nor "B" we check whether the number of lowercase "b" found till that moment is equal to zero, if yes we append that alphabet to the result variable and if not we decrement the variable that stores the number of b's left till that moment (at the current 'i') and same goes for "B".
+    What i learnt from this problem is that i should pay attention to the complexity of the methods that i am calling, at the beginning i used the method StringBuilder.insert() which i thought was O(1) but it was O(N) which made my program slower so i switched to StringBuilder.append() and then i reversed the result at least then i only used one O(N) method in my whole program instead of calling an O(N) method each time i'm inserting an alphabet 
